@@ -24,3 +24,15 @@ jobs:
     steps:
       - run: echo "Deploying to ${{ inputs.environment }}"
       - run: echo "Deploying to ${{ inputs.message }}"
+
+  deploy1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
+      - run: echo "Deploying to ${{ inputs.message }}"
+
+  deploy2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to ${{ inputs.environment }}"
+      - run: echo "Deploying to ${{ inputs.message }}"
