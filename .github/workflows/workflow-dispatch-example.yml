@@ -17,7 +17,7 @@ on:
         default: 'Good Morning team'
         type: string
      
-
+        
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -38,7 +38,7 @@ jobs:
       - run: echo "Deploying to ${{ inputs.message }}"
 
   TriggerJob:
-    uses : ./.github/workflows/cron-example.yml
+    uses : ./.github/workflows/onworkflowcall-example.yml
     with:
       environment: ${{ inputs.environment }}
       message:  ${{ inputs.message }}
