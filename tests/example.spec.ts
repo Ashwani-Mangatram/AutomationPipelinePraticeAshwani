@@ -7,7 +7,7 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
 
-test('get started link', async ({ page }) => {
+test('get started link', {tag: '@sanity'}, async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.
@@ -17,7 +17,7 @@ test('get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
 
-test('get started link 1', async ({ page }) => {
+test('get started link 1', {tag: '@smoke'}, async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.
